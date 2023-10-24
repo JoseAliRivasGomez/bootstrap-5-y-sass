@@ -1,0 +1,34 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.site-header {
+    @include m.bgImage('../img/header.jpg', $secondary );
+
+    .logo {
+        max-width: 20rem;
+        margin: 0 auto;
+        @include media-breakpoint-up(md) { 
+            margin: 0;
+        }
+    }
+    .contenido {
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+        @include media-breakpoint-up(md) { 
+            max-width: 50%;
+        }
+        @include media-breakpoint-up(lg) { 
+            padding-top: 15rem;
+            padding-bottom: 15rem;
+            max-width: 40%;
+        }
+
+        h1 {
+            color: $white;
+            font-size: 4.5rem;
+            @include media-breakpoint-up(md) { 
+                font-size: 6rem;
+            }
+        }
+    }
+}

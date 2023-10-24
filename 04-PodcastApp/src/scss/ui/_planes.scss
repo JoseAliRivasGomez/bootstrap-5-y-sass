@@ -1,0 +1,50 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+$separacion: 5rem;
+
+.planes {
+    h2 {
+        @include m.headingBorder($white, $primary);
+    }
+}
+
+.plan {
+    padding: 16rem 4rem 4rem 4rem;
+    border-bottom: 1px solid #e1e1e1;
+    @include media-breakpoint-up(md) { 
+        border: none;
+        // transition-property: transform;
+        // transition-duration: 300ms;
+        @include transition(transform 300ms ease);
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .precio {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase; 
+    }
+
+    &.inicio {
+        @include m.iconoBg('../img/icono_inicio.svg');
+    }
+
+    &.negocio {
+        @include m.iconoBg('../img/icono_negocio.svg');
+        @include media-breakpoint-up(md) { 
+            margin-top: -#{$separacion};
+            margin-bottom: -$separacion;
+            border-radius: 2rem;
+            background-position-y: calc(2rem + #{$separacion});
+            padding-top: calc(16rem + #{$separacion}); 
+            z-index: 100;
+        }
+    }
+    &.pro {
+        @include m.iconoBg('../img/icono_pro.svg');
+    }
+}

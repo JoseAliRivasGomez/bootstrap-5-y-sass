@@ -1,0 +1,16 @@
+{
+  "name": "03-meeti",
+  "version": "1.0.0",
+  "description": "Aprendiendo Bootstrap 5 y SASS",
+  "main": "index.js",
+  "scripts": {
+    "compilar:sass": "sass --watch src/scss:build/css",
+    "build:sass": "purgecss -css build/css/style.css -con index.html -o build/css/meeti.css "
+  },
+  "author": "Juan De la torre",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.1.1",
+    "sass": "^1.39.2"
+  }
+}

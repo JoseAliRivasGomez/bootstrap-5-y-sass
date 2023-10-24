@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introducción a Bootstrap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+    <header class="header p-5 mb-5">
+        <h1 class="text-center">Bootstrap 5 - La Guía Completa inc. BEM y SASS +10 Proyectos</h1>
+        <p class="text-center text-white">Básicos de Bootstrap 5</p>
+    </header>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Contenedores</h1>
+
+        <div class="container">Contenido</div>
+
+        <div class="container-sm">Contenido</div>
+        <div class="container-md">Contenido</div>
+        <div class="container-lg">Contenido</div>
+        <div class="container-xl">Contenido</div>
+        <div class="container-xxl">Contenido</div>
+
+        <div class="container-fluid">Contenido</div>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Grid</h1>
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quam, blanditiis quaerat, iusto accusamus quod harum eum voluptas aspernatur unde sunt ducimus sint fuga earum non reprehenderit? Totam, distinctio atque?
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem, eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem, eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum placeat!
+                </div>
+
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem, eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem, eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem, eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem, eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum placeat!
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis voluptatem, voluptatum alias autem, eveniet debitis minima nemo cum mollitia facilis nulla quas vitae illum quidem. Officia at non harum placeat!
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Tipografia</h1>
+
+        <h1>Encabezado 1</h1>
+        <h2>Encabezado 2</h2>
+        <h3>Encabezado 3</h3>
+        <h4>Encabezado 4</h4>
+        <h5>Encabezado 5</h5>
+        <h6>Encabezado 6</h6>
+
+        <p>Este es un parrafo</p>
+
+        <!-- Displays -->
+
+        <h1 class="display-1">Encabezado con Display</h1>
+        <h1 class="display-2">Encabezado con Display</h1>
+        <h1 class="display-3">Encabezado con Display</h1>
+        <h1 class="display-4">Encabezado con Display</h1>
+        <h1 class="display-5">Encabezado con Display</h1>
+        <h1 class="display-6">Encabezado con Display</h1>
+
+        <p class="display-1">Parrafo con Display</p>
+
+        <!-- Font Size -->
+
+        <h1 class="fs-1">Encabezado con Font Size</h1>
+        <h1 class="fs-2">Encabezado con Font Size</h1>
+        <h1 class="fs-3">Encabezado con Font Size</h1>
+        <h1 class="fs-4">Encabezado con Font Size</h1>
+        <h1 class="fs-5">Encabezado con Font Size</h1>
+        <h1 class="fs-6">Encabezado con Font Size</h1>
+
+        <p class="fs-1">Parrafo con Font Size</p>
+
+
+        <!-- Utilidades para alinear Textos -->
+
+        <p class="text-start">Texto a la izquierda</p>
+        <p class="text-end">Texto a la derecha</p>
+        <p class="text-center">Texto al centro</p>
+
+        <!-- Con Media queries -->
+        <p class="text-end text-md-center text-lg-start text-xl-end">Texto a la derecha, centro e izquierda...</p>
+
+        <!-- Capitalización -->
+        <p class="text-lowercase">MINUSCULAS</p>
+        <p class="text-uppercase">mayusculas</p>
+        <p class="text-capitalize">Encabezado con tipo capital</p>
+
+        <!-- Controlar font-weight -->
+        <p class="fw-bold">Texto</p>
+        <p class="fw-normal">Texto</p>
+        <p class="fw-light">Texto</p>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Colores en Bootstrap</h1>
+
+        <h1 class="text-primary">Colores en Textos</h1>
+        <h1 class="text-secondary">Colores en Textos</h1>
+        <h1 class="text-danger">Colores en Textos</h1>
+        <h1 class="text-warning">Colores en Textos</h1>
+        <h1 class="text-success">Colores en Textos</h1>
+
+        <div class="bd-indigo-600">Un div con contenido</div>
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Imágenes</h1>
+
+        
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="img-thumbnail" src="img/curso_1.jpg" alt="imagen curso">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Botones</h1>
+
+        <button type="button" class="btn btn-primary">Agregar <i class="bi bi-person-plus-fill"></i></button>
+        <button type="button" class="btn btn-danger">Eliminar</button>
+        <button type="button" class="btn btn-warning">Comprobar</button>
+        <button type="button" class="btn btn-dark">Comprobar</button>
+
+        <a href="#" class="btn btn-primary">Enlace</a>
+
+        <button type="submit" class="btn btn-primary">Enviar Formulario <i class="bi bi-alarm-fill"></i>
+        </button>
+
+        <a href="#" class="btn btn-outline-primary">Enlace <i class="bi bi-alarm-fill"></i>
+        </a>
+
+        <a href="#" class="btn btn-outline-danger">Enlace</a>
+
+        <a href="#" class="btn btn-outline-warning">Enlace</a>
+
+        <button type="button" class="btn btn-primary btn-lg disabled">Agregar</button>
+        <button type="button" class="btn btn-danger btn-sm">Eliminar</button>
+        <button type="button" class="btn btn-warning">Comprobar</button>
+        <button type="button" class="btn btn-dark" disabled>Comprobar</button>
+
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Margins y Paddings</h1>
+
+        <div class="container-xl">
+
+            <div class="bg-success p-3 text-white ">
+                Ejemplo de padding
+            </div>
+
+            <div class="bg-danger p-3 text-white px-3">
+                Ejemplo de margin
+            </div>
+
+
+            <div class="d-grid gap-4">
+                <div class="bg-success p-3 text-white ">
+                    Ejemplo de padding
+                </div>
+    
+                <div class="bg-danger p-3 text-white px-3">
+                    Ejemplo de margin
+                </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Spinners</h1>
+
+        <div class="d-flex justify-content-center">
+            <div class="spinner-border text-primary" role="status">
+                <span class="visually-hidden">Cargando...</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Cards</h1>
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="img/curso_1.jpg" alt="imagen curso">
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de Guitarra</h3>
+                            <p class="card-text">Descripción del curso de guitarra</p>
+                            <a href="#" class="btn btn-primary d-block">Tomar Curso</a>
+                        </div>
+                    </div>
+                </div> <!-- col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="img/curso_2.jpg" alt="imagen curso">
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de Diseño Gráfico</h3>
+                            <p class="card-text">Descripción del curso de diseño</p>
+                            <a href="#" class="btn btn-primary d-block">Tomar Curso</a>
+                        </div>
+                    </div>
+                </div> <!-- col-md-4 -->
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="img/curso_3.jpg" alt="imagen curso">
+                        <div class="card-body">
+                            <h3 class="card-title">Curso de Diseño de UX y UI</h3>
+                            <p class="card-text">Descripción del curso de guitarra</p>
+                            <a href="#" class="btn btn-primary d-block">Tomar Curso</a>
+                        </div>
+                    </div>
+                </div> <!-- col-md-4 -->
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Formularios</h1>
+
+        <div class="container-xl">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6">
+                    <form>
+                        <legend> <i class="bi bi-person-plus-fill"></i> Nuevo Cliente</legend>
+
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input id="nombre" type="text" class="form-control" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="empresa" class="form-label">Empresa</label>
+                            <input id="empresa" type="text" class="form-control" >
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" type="email" class="form-control" >
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-plus-circle-fill"></i>
+                            Registrar Cliente 
+                            
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Toasts</h1>
+
+        <button type="button" class="btn btn-primary" id="toastBtn">Mostrar Notificación</button>
+   
+        <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 10;">
+            <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <strong class="me-auto">Nuevo Email...</strong>
+                    <small>Hace 3 minutos</small>
+                    <button type="button" data-bs-dismiss="toast" aria-label="Cerrar Notificacion" class="btn-close"></button>
+                </div>
+                <div class="toast-body">
+                    Has recibido un mensaje
+                </div>
+            </div>
+        </div>
+     
+
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Carousel</h1>
+
+
+        <div class="container-xl">
+            <div id="indicadores" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button class="active" type="button" data-bs-target="#indicadores" data-bs-slide-to="0"></button>
+                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#indicadores" data-bs-slide-to="3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/galeria_01.jpg" alt="slide 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria_02.jpg" alt="slide 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria_03.jpg" alt="slide 1" class="d-block w-100">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/galeria_04.jpg" alt="slide 1" class="d-block w-100">
+                    </div>
+
+                    <button type="button" class="carousel-control-prev" data-bs-target="#indicadores" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+
+                    <button type="button" class="carousel-control-next" data-bs-target="#indicadores" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+   
+    </section>
+    
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Modals</h1>
+
+
+        <div class="container-xl">
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal" >Ver Formulario</button>
+
+
+            <!-- Modal -->
+
+            <div id="modal" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-title">Nuevo Cliente</h2>
+                            <button data-bs-dismiss="modal" type="button" class="btn-close"></button>
+                        </div>
+
+                        <div class="modal-body">
+                            <form>
+                                <legend> <i class="bi bi-person-plus-fill"></i> Nuevo Cliente</legend>
+        
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre</label>
+                                    <input id="nombre" type="text" class="form-control" >
+                                </div>
+        
+                                <div class="mb-3">
+                                    <label for="empresa" class="form-label">Empresa</label>
+                                    <input id="empresa" type="text" class="form-control" >
+                                </div>
+        
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input id="email" type="email" class="form-control" >
+                                </div>
+        
+                                
+                            </form>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="bi bi-plus-circle-fill"></i>
+                                Registrar Cliente 
+                            </button>
+
+                            <button data-bs-dismiss="modal" type="button" class="btn btn-danger">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Navs</h1>
+   
+        <div class="container-xl">
+            <ul class="nav flex-column flex-md-row justify-content-evenly">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Nosotros</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Empresa</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Historia</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Clientes</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Tienda Virtual</a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a class="dropdown-item" href="#">Categorías</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Nuevos Productos</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Ofertas</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    
+    <section class="seccion">
+        <h1 class="text-center my-5 heading">Off Canvas</h1>
+
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#menu">
+            Administrar Perfil
+        </button>
+
+        <div id="menu" class="offcanvas offcanvas-start">
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Navegación</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <div class="offcanvas-body">
+                <h2>Administración</h2>
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Información</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pedidos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Tarjetas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Notificaciones</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        document.querySelector('#toastBtn').onclick = e => {
+            e.preventDefault();
+
+            // Mostrar el toast
+            const toastEl = document.querySelector('#toast');
+            const toast = new bootstrap.Toast( toastEl );
+            toast.show();
+        }
+    </script>
+</body>
+</html>

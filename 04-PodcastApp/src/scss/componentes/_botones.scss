@@ -1,0 +1,42 @@
+@use '../custom' as *;
+
+.btn-header {
+    //* BG color, border color, color texto, hover: bg color, hover: border color, hover: color texto  */
+    // @include button-variant($primary, transparent, $secondary, darken($primary, 10%), transparent, darken($secondary, 10%));
+    // @include button-size(1rem, 5rem, 2rem, 0);
+    //* padding-y, padding-x, font-size, border-radius */
+
+    color: $secondary;
+    border-color: transparent;
+    background-color: $primary;
+    
+    padding: 1rem 5rem;
+    font-size: 2rem;
+    border-radius: 0;
+
+    font-weight: 700;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin-top: 1rem;
+
+    @include media-breakpoint-up(md){
+        display: inline-block;
+    }
+}
+
+.btn-header:hover {
+    color: darken($secondary, 10%);
+    background-color: darken($primary, 10%);
+    border-color: transparent;
+}
+
+.boton-plan {
+    @extend .btn-header;
+    border: 1px solid $white;
+    @include media-breakpoint-up(md){
+        display: block;
+    }
+}
+
+

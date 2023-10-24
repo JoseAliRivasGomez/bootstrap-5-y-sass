@@ -1,0 +1,60 @@
+@use '../custom' as *;
+@use 'utils/mixins' as m;
+
+.footer {
+    background-color: $secondary;
+    color: $white;
+    text-align: center;
+    @include media-breakpoint-up(md) {
+        text-align: left;
+    }
+
+    &__container {
+        @include make-container;
+        max-width: map-get($map: $container-max-widths, $key: xxl);
+    }
+
+    &__row{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        @include make-row;
+    }
+
+    &__widget{
+        @include make-col-ready;
+        @include media-breakpoint-up(md){
+            @include make-col(3);
+        }
+        margin-top: 0rem;
+    }
+
+    &__logo {
+        width: 20rem;
+        margin-bottom: 4rem;
+        @include media-breakpoint-up(md){
+            margin-bottom: 0;
+        }
+    }
+
+    &__heading{
+        color: $primary;
+    }
+
+    &__link{
+        display: block;
+        color: $white;
+        text-decoration: none;
+        font-size: 1.6rem;
+        margin-bottom: 1rem;
+    }
+
+    &__copyright {
+        @include make-container;
+        max-width: map-get($map: $container-max-widths, $key: xxl);
+        border-top: 2px solid $primary;
+        font-size: 1.2rem;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+}

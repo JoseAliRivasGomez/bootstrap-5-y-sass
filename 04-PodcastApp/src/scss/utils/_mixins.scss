@@ -1,0 +1,33 @@
+@use '../custom' as *;
+
+@mixin bgImage($url, $color) {
+    background-image: linear-gradient( transparentize($color, .3) 0%, transparentize($color, .3) 100% ), url( $url );
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+
+@mixin iconoBg($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+}
+
+@mixin headingBorder( $colorTexto, $colorLinea ) {
+    display: inline-block;
+    margin-top: 5rem;
+    color: $colorTexto;
+    @include media-breakpoint-up(md){
+        margin-top: 0;
+    }
+    
+    &::after {
+        content: '';
+        background-color: $colorLinea;
+        height: 1rem;
+        width: 100%;
+        display: block;
+        margin: -1.4rem 0 0 0;
+    }
+}
