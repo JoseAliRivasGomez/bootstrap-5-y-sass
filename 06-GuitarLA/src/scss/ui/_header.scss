@@ -1,0 +1,34 @@
+@use '../custom' as *;
+@use '../base/mixins' as m;
+@use '../base/animaciones' as *;
+
+.header {
+    @include m.background-image('../img/header.jpg');
+    position: relative;
+
+    .header-guitarra {
+        display: none;
+
+        @include media-breakpoint-up(lg) {
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            animation-duration: 1s;
+            animation-delay: 0s;
+            animation-timing-function: ease-in-out;
+            animation-name: animarImagen;
+        }
+    }
+}
+
+.navegacion {
+    position: relative;
+    z-index: 1;
+    a {
+        &:hover {
+            background-color: $primary;
+        }
+    }
+}

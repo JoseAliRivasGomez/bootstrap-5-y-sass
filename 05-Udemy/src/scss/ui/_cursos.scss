@@ -1,0 +1,48 @@
+@use '../custom' as *;
+
+.nav {
+    .active {
+        color: $dark;
+    }
+}
+
+.categoria-curso {
+    border: 1px solid $gris-oscuro;
+}
+
+.listado-cursos {
+    @include make-row;
+
+    .curso {
+        @include make-col-ready;
+        @include media-breakpoint-up(sm) {
+            @include make-col(1, 2);
+        }
+        @include media-breakpoint-up(md) {
+            @include make-col(1, 3);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(1, 5);
+        }
+
+        .titulo {
+            font-family: $fuente-textos;
+            font-size: 1rem;
+        }
+        .instructor, 
+        .total{
+            font-size: .8rem;
+        }
+        .calificacion {
+            width: 6rem;
+        }
+        .precio {
+            font-size: .9rem;
+
+            span {
+                font-size: .7rem;
+                text-decoration: line-through;
+            }
+        }
+    }
+}

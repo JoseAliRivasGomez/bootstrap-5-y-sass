@@ -1,0 +1,5 @@
+@mixin background-image($url) {
+    background-image: linear-gradient(to right, rgb( 0 0 0 / .7), rgb(0 0 0 / .7)), url($url);
+    background-position: 50%;
+    background-size: cover;
+}

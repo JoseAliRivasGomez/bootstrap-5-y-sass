@@ -1,0 +1,46 @@
+// Reescribir colores
+$negro: #000;
+$blanco: #FFF;
+$morado: #A435F0;
+$gris: #F8F9FB;
+$gris-oscuro: #6A6F73;
+$naranja: #B4690E;
+
+// Tipografia
+$fuente-headings: 'Kaisei HarunoUmi', serif;
+$fuente-textos: Arial, Helvetica, sans-serif;
+$headings-font-family: $fuente-headings;
+$headings-font-weight: 700;
+$h2-font-size: 3rem;
+$h3-font-size: 2.6rem;
+
+// Colores
+$secondary: $naranja;
+$success: $morado;
+$light: $gris;
+$dark: $negro;
+
+// Formularios
+$input-border-radius: 1rem;
+$input-border-color: $dark;
+
+// Enlaces
+$nav-link-color: $gris-oscuro;
+$nav-link-hover-color: $dark;
+$nav-link-font-weight: 700;
+$nav-link-font-size: .9rem;
+
+// Botones
+$btn-border-radius: 0;
+$btn-font-weight: 700;
+
+// Cards
+$card-spacer-x: 0;
+$card-border-radius: 0;
+$card-border-width: 0;
+
+// Habilitar CSS Grid
+$enable-cssgrid: true;
+
+// Importar Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';

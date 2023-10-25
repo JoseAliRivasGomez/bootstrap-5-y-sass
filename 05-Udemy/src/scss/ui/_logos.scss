@@ -1,0 +1,23 @@
+@use '../custom' as *;
+
+.logos {
+    @include make-row;
+    justify-content: center;
+    .logo {
+        @include make-col-ready;
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(1, 2);
+        }
+        @include media-breakpoint-up(md) {
+            @include make-col(1, 3);
+        }
+        @include media-breakpoint-up(lg) {
+            @include make-col(1, 5);
+        }
+
+        img {
+            max-width: 10rem;
+        }
+    }
+}
